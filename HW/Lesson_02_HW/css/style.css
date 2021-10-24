@@ -1,0 +1,70 @@
+/* Level 1 */
+blockquote {
+    margin: 0;
+    color: green;
+}
+
+blockquote p{
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    opacity: .7;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+/* Level 2 */
+a[href^="https"]{
+    color: red;
+}
+
+ul.list > li:last-child > a {
+    background: green;
+}
+
+ul + p{
+    font-size: 26px;
+}
+/* Level 3 */
+#greycol{
+    color: grey;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.text-box div > p{
+    color: red;
+}
+/* .text-box > h3:first-child{ */
+h3:first-child{
+    color: pink;
+}
+
+.text-box > p:nth-child(7){
+    color: green;
+}
+/* Level 4 */
+.bg-box{
+    padding: 6% 5% 5% 5%;
+    background-size: cover;
+    background: 
+    url(../img/pole-zelen-trava-dom-derevya.jpg) no-repeat center,
+    url(../img/grass-png-images-pictures-transparent-28.png) repeat-x bottom/20%,
+    url(../img/lamp-png-0.png) repeat-x top/4%,
+    url(../img/Ёжик.png) repeat-y left/4%,
+    url(../img/58eb07b830eab15b56162788.png) repeat-y right/4%,
+    rgb(52, 207, 52);
+    
+    /* height: 100%;
+    width: auto; */
+    /* height: 100vh;
+    background:#fc0 url(lamp-png-0.png) repeat-y 100% 0;
+     */
+}
