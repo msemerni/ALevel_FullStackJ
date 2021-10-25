@@ -1,0 +1,47 @@
+.parentBlocks{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border-color: rgb(219, 59, 184);
+    border-style: dashed;
+    /* position: relative; */
+}
+
+.block_1{
+
+    /* margin: 0 auto; */
+    background-color: blue;
+}
+
+.block_2{
+    background-color: green;
+    position: relative;
+    /* left: 10px;
+    top: 10px; */
+    z-index: -1;
+}
+
+.block_3{
+    background-color: lightcoral;
+}
+
+.block_1, .block_2, .block_3{
+    border: 1px solid;
+    height: 100px;
+    width: 200px;
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    background-image: url(../img/favicon.png);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:"";
+}
