@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.777;
+    color: grey;
+}
+
+.wrapper {
+    width: 100%;
+    /* height не использовать в пикселах. 
+    и вообще лучше не использовать - 
+    вылезет за границы блока нужно min-height*/
+    position: relative;
+    overflow: hidden; 
+    /* обрезает контент ?? */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    /* vertical-align: top; - у картинки баг - снизу 
+    6-10 пикселей высоты. 
+    Родитель становится таким же как родитель*/
+}
+
+.box {
+    background: beige;
+    padding: 20px;
+    border: 2px dotted #000;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.holder {
+    width: 350px;
+    height: 220px;
+    border: 2px dashed red;
+    padding: 15px 10px 20px;
+    margin-bottom: 30px;
+    background: green;
+}
+.inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+ 
+.left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.left {
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+/* <!-- _____________ --> */
+
+
+.relative {
+    min-height: 100vh;
+    position: relative;
+}
+
+.fixed {
+    background: green;
+}
+
+.fixed h1{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.sticky {
+    background: pink;
+
+}
+
+.sticky h1{
+    position: sticky;
+    top: 20px;
+    left: 30px;
+}
+
+.absolute {
+    background: lightblue;
+}
+
+.absolute h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.holder-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    background: #000;
+}
+.translate {
+    position: absolute;
+    background: #fff;
+    /* ..... */
+
+}
+
+.holder-box:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    height: 1px;
+    background: #000;
+}

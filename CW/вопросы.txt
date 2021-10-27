@@ -21,6 +21,7 @@ HW1
   ..img/img.jpg
 
 Figma - photoshop
+Pixel Perfect
 
 
 

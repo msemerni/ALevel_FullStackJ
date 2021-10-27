@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.777;
+    color: grey;
+}
+
+.wrapper {
+    width: 100%;
+    /* height не использовать в пикселах. 
+    и вообще лучше не использовать - 
+    вылезет за границы блока нужно min-height*/
+    position: relative;
+    overflow: hidden; 
+    /* обрезает контент ?? */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    /* vertical-align: top; - у картинки баг - снизу 
+    6-10 пикселей высоты. 
+    Родитель становится таким же как родитель*/
+}
+
+.box {
+    background: lightblue;
+    width: 300px;
+    /* height: 300px;  height лучше не использовать */
+    border: 10px solid #000;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20%;
+}
