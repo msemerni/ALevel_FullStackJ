@@ -26,9 +26,10 @@
     background: rgb(155, 164, 207);
 }
 
-p::selection {
+.col p::selection {
     color: #ff0; /* Цвет текста */
     background: #000; /* Цвет фона */
+    text-shadow: 2px 2px 0 red;
     cursor: help;
 }
 
