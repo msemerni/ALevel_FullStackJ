@@ -1,13 +1,48 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
 box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+    font-size: 14x;
+    /* line-height: 1.777; */
+    color: rgb(49, 48, 48);
+}
 
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+p {
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+
+code {
+    font-family: monospace;
+    font-size: smaller;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
 
 .greenDiv {
     width: 350px;
@@ -15,6 +50,22 @@ box-sizing: inherit;
     padding: 15px 10px 20px 10px;
     border: dotted red 2px;
     background: green;
-    margin: 20px;
+    margin: 0 0 30px 0;
     /* box-sizing: content-box */
+}
+
+.thirdDiv {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.leftImg {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.rightImg {
+    float: right;
+    margin: 20px 0 20px 20px;
 }

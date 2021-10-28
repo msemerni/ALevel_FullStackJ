@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson_03_HW</title>
     <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+
+<body onload="whyMarginBigger()">
     <div class="wrapper">
-        <div class=greenDiv>
-            Title
+        <h1>First level</h1>
+        <p>Property <code>box-sizing: border-box;</code> was checked</p>
+        <p>"CSS reset" was downloaded from <a href="https://meyerweb.com/eric/tools/css/reset/"
+                target="_blank">meyerweb.com</a></p>
+        <hr>
+        <h1>Second level</h1>
+        <div>
+            <div class=greenDiv>
+            </div>
+        </div>
+        <hr>
+        <h1>Third level</h1>
+        <div class="thirdDiv">
+            <img class="leftImg" src="img/hw-6.2.1.png" alt="6.2.1" width="200">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus corporis obcaecati aut? Quae eius quia
+                repellendus error provident quidem recusandae voluptatum aliquid fugiat itaque, veniam vel beatae natus
+                cumque maiores! Natus corporis obcaecati aut?Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Natus corporis obcaecati aut? Quae eius quia repellendus error provident quidem recusandae voluptatum
+                aliquid fugiat itaque, veniam vel beatae natus cumque maiores!Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Natus corporis obcaecati aut? Quae eius quia repellendus error provident quidem
+                recusandae voluptatum aliquid fugiat itaque, veniam vel beatae natus cumque maiores!<img class=rightImg
+                    src="img/hw-6.2.2.png" alt="6.2.1" width="150"><img> Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Natus corporis obcaecati aut? Quae eius quia repellendus error provident quidem
+                recusandae voluptatum aliquid fugiat itaque, veniam vel beatae natus cumque maiores!Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit. Natus corporis obcaecati aut? Quae eius quia repellendus error
+                provident quidem recusandae voluptatum aliquid fugiat itaque, veniam vel beatae natus cumque maiores!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus corporis obcaecati aut? Natus corporis
+                obcaecati aut?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Natus corporis obcaecati aut?</p>
         </div>
     </div>
+    <script>
+        function whyMarginBigger() {
+            alert("Почему у левой картинки нижний отступ больше чем правый отступ? => не соответствует образцу в ДЗ");
+        };
+    </script>
 </body>
+
 </html>
