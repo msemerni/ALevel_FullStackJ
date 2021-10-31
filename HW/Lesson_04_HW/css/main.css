@@ -1,0 +1,292 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+/* margin: 0; */
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    /* line-height: 1.5; */
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: auto; 
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+  /* всё выше по умолчанию */
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+/* firstLevel */
+
+.firstLevel {
+    width: 600px;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;
+    background: #0d5825;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    border: 2px dashed red;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.blockQuote {
+    margin: 0;
+    padding: 30px 0px 0px 0px;
+    word-spacing: 5px;
+}
+
+.blockQuote::before {
+    content: "\201C";
+}
+
+.blockQuote::after {
+    content: "\201D";
+}
+
+.card {
+    position: absolute;
+    width: 150px;
+}
+
+.leftCard {
+    left: 29%;
+    transform: rotate(-25deg);
+    bottom: 19%;
+}
+
+.middleCard {
+    left: 50%;
+    transform: translateX(-50%) rotate(-10deg);
+    bottom: 18%;
+}
+
+.rightCard {
+    left: 47%;
+    transform: rotate(8deg);
+    bottom: 15%;
+}
+
+/* .card:hover {
+    transform: translateY(-40px); не работает ?????
+} */
+
+.leftCard:hover {
+    transform: translateY(-30px) rotate(-24deg);
+}
+
+.middleCard:hover {
+    transform: translate(-50%, -30px) rotate(-10deg);
+}
+
+.rightCard:hover {
+    transform: translateY(-30px) rotate(8deg);
+}
+
+/* secondLevel */
+
+.secondLevel {
+    position: relative;
+    min-height: 300px;
+    margin: 0 auto;
+    border: 2px dashed red;
+}
+
+.square {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+}
+
+
+
+.pinkSquare {
+    transform: translate(-100%, -100%);
+    background: #ff8888;
+}
+
+.pinkSquare:hover {
+    transform: translate(-100%, -100%) scale(1.2);
+} 
+
+.blueSquare {
+    transform: translate(-50%, -50%);
+    background: #7e8aeb;
+    z-index: 2;
+}
+
+.blueSquare:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.greenSquare {
+    background: #4def99;
+}
+
+.greenSquare:hover {
+    transform: scale(1.2);
+} 
+
+/* thirdLevel */
+
+.header {
+    position: relative;
+    height: 100vh;
+    /* border: 2px dashed red; */
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: -170px;
+    bottom: 0;
+    background: #808080;
+    width: 210px;
+    padding: 30px 20px;
+    z-index: 2;
+    transition: left .3s ease-in;
+}
+
+.nav::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(50%, -50%) rotate(90deg);
+    text-transform: uppercase;
+    color: #fff;
+    /* width: 100px; */
+}
+
+.nav:hover {
+    left: 0;
+    transition: left .3s ease-in;
+}
+
+.nav:hover:after {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease-in;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+    padding-left: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #D99107;
+    border: 1px solid #000;
+    transform: rotate(45deg) skew(5deg);
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav-item a:hover {
+    color: #D99107;
+    transition: color .3s ease-in;
+}
+
+/* fourthLevel */
+
+.fourthLevel {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 20px auto;
+    background-color: wheat;
+    border: 5px solid lightseagreen;
+}
+
+@keyframes sliding {
+    0% {
+        background: red;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background: green;
+        left: 0;
+        top: calc(100% - 100px);
+    }
+
+    50% {
+        background: blue;
+        left: calc(100% - 100px);
+        top: calc(100% - 100px);
+    }
+
+    75% {
+        background: yellow;
+        left: calc(100% - 100px);
+        top: 0;
+    }
+
+    100% {
+        background: red;
+        left: 0;
+        top: 0;
+    }
+}
+
+.animationfourthLevel {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: sliding 5s infinite alternate cubic-bezier(0.2, 0.2, 0.2, 0.2);
+}
+
+.myFooter {
+    background-color:dodgerblue;
+    text-align: right;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}

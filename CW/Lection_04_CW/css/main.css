@@ -14,3 +14,101 @@ body {
     /* line-height: 1.777; */
     color: rgb(49, 48, 48);
 }
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    /* overflow: hidden;  */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  /* всё выше по умолчанию */
+
+  .main {
+      height: 100vh;
+      border: blue 3px solid;
+      position: relative;
+  }
+
+  .box {
+      width: 400px;
+      height: 400px;
+      background: lightcoral;
+      border: 5px solid lightseagreen;
+      top: 0;
+      /* top: 50%; */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: relative;
+    }
+  
+  .box:hover {
+      /* transition: background .3s ease-in-out 1s; */
+      transition: all .3s ease-in-out;
+      background: lightseagreen;
+      border-color: lightcoral;
+      /* transform: rotate(180deg); */
+      transform: scale(1.2);
+      /* transform: scale(1.2) rotate(45deg); */
+      transform: skew(20deg);
+      /* transform: skew(-10deg) rotate(180deg); */
+
+  }
+  /* чтобы текст внутри элемента не искажался */
+  .box p:hover{
+    transform: skew(-20deg);
+}
+
+
+/* 4 level HW */
+@keyframes sliding {
+    0% {
+        background: red;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background: green;
+        left: 0;
+        top: calc(100% - 100px);
+    }
+
+    50% {
+        background: blue;
+        left: calc(100% - 100px);
+        top: calc(100% - 100px);
+    }
+
+    75% {
+        background: yellow;
+        left: calc(100% - 100px);
+        top: 0;
+    }
+
+    100% {
+        background: red;
+        left: 0;
+        top: 0;
+    }
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: sliding 5s infinite;
+}
+
+.secondAnimation {
+    animation-direction: reverse;
+}
+

@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 14x;
+    /* line-height: 1.777; */
+    color: rgb(49, 48, 48);
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+  /* всё выше по умолчанию */
+
+  .header {
+      position: absolute;
+      top: 0;
+      left: -170px;
+      bottom: 0;
+      background: #808080;
+      width: 210px;
+      padding: 30px 20px;
+      z-index: 2;
+      /* height: 300px; */
+  }
+
+  .header::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translate(50%, -50%) rotate(90deg);
+      text-transform: uppercase;
+      color: #fff;
+      /* width: 100px; */
+  }
+
+  .header:hover {
+      left: 0;
+      transition: left .3s ease-in;
+  }
+
+  .header:hover::after {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s ease-in;
+  }
+
+  .nav-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+
+  .nav-item {
+      position: relative;
+      padding-left: 20px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+  }
+
+  .nav-item::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: yellow;
+      border: 1px solid #000;
+      transform: rotate(45deg) skew(5deg);
+  }
+
+  .nav-item a {
+      color: #fff;
+      text-decoration: none;
+  }
+
+  .nav-item a:hover {
+      transition: color .3s ease-in;
+      color: yellow;
+  }
+
+  
