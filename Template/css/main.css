@@ -26,4 +26,17 @@ img {
     height: auto;
     vertical-align: top;
   }
-  /* всё выше по умолчанию */
+
+/* всё выше по умолчанию */
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 25%;
+    padding: 0 15px 30px;
+} */
+
+  /* всё выше по умолчанию для flex*/

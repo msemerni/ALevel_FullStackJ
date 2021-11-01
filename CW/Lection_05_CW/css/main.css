@@ -29,32 +29,34 @@ img {
 }
   /* всё выше по умолчанию */
 
-  .container {
+.container {
     max-width: 1054px;
     padding: 0 15px;
-
-
+    margin: 0 auto;
   }
 
 .wrapper {
-    height: auto;
-    vertical-align: top;
-
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    /* overflow: hidden; */
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
+    align-items: center;
+
 }
 
 .col {
     width: 25%;
     padding: 0 15px 30px;
-
 }
 
 
-/* HW 5 */
+/* HW 5
 .holder {
     display: flex;
     border: 2px solid #000;
@@ -72,13 +74,13 @@ img {
     justify-content: center;
     height: 50px;
     flex-grow: 1; 
-    /* занимать свободное место */
+    занимать свободное место
 }
 
 .item:nth-child(1) {
     background: #FD644D;
     flex-basis: 50%;
-    /* тоже самое что размер 50% */
+    тоже самое что размер 50%
     order: -2;
 }
 
@@ -100,4 +102,4 @@ img {
     background: #fda429;
     order: -2;
     flex-basis: 50%;
-}
+} */
