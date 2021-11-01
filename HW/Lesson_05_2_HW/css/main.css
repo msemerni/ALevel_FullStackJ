@@ -10,7 +10,7 @@ box-sizing: inherit;
 
 body {
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     /* line-height: 1.5; */
 }
 
@@ -47,8 +47,7 @@ hr {
     border: 2px solid #000;
     border-radius: 20px 20px 0 0;
     flex-wrap: wrap;
-
-
+    overflow: hidden;
 }
 
 .item {
@@ -56,4 +55,30 @@ hr {
     align-items: center;
     justify-content: center;
     height: 50%;
+    flex-grow: 1;
+}
+
+.item:nth-child(1) {
+    background: #FD644D;
+    flex-basis: 50%;
+    order: -2;
+}
+
+.item:nth-child(2) {
+    background: #4983B2;
+}
+
+.item:nth-child(3) {
+    background: #663797;
+    order: -1;
+}
+
+.item:nth-child(4) {
+    background: #0E7F12;
+}
+
+.item:nth-child(5) {
+    background: #FDA429;
+    flex-basis: 50%;
+    order: -2;
 }
