@@ -73,4 +73,4 @@ ________________
 box-sizing: inherit;    - почему не задаем марджин 0 для * ? => ПОТОМУ ЧТО МАРДЖИН НЕ НАСЛЕДУЕТСЯ
 /* margin: 0; */
 
-
+https://www.figma.com/file/YsfjeAFFHecZ8KV8AMDu7t0J/Templates-3.-More-on-Figma.info
