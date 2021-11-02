@@ -35,13 +35,6 @@ img {
     margin: 0 auto;
   }
 
-.wrapper {
-    width: 100%;
-    position: relative;
-    min-height: 100%;
-    /* overflow: hidden; */
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;

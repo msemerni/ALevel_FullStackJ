@@ -22,24 +22,25 @@ img {
   }
 
   /* всё выше по умолчанию */
-  
+
+  .container, .main {
+      display: flex;
+  }
+
   .container {
     /* max-width: 1180px; */
     padding: 0 15px;
     margin: 0 auto; 
+    min-height: 100vh;
+    flex-wrap: wrap;
   }
 
   .header {
       display: flex;
       background-color: #D2B942;
       padding: 5px;
+      flex-grow: 1;
       justify-content: space-between;
-  }
-
-  .main {
-    background-color: #fff;
-    display: flex;
-    min-height: 100vh;
   }
 
   .nav {
@@ -60,9 +61,14 @@ img {
     text-decoration: none;
   }
 
+  .main {
+      background-color: #fff;
+  }
+
   .mainArticle {
       display: flex;
       text-align: center;
+      
       padding: 30px;
       flex-grow: 1;
   }
@@ -95,6 +101,7 @@ img {
       padding: 10px 10px 5px 10px;
       justify-content: center;
       flex: 0 0 5em;
+      flex-grow: 1;
   }
 
 
@@ -112,5 +119,6 @@ img {
     padding: 0 15px 30px;
 } */
 
+  /* всё выше по умолчанию для flex*/
 
   
