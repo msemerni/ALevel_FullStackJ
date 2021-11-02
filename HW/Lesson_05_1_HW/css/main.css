@@ -6,19 +6,13 @@
 *::before,
 *::after {
 box-sizing: inherit;
+margin: 0;
+padding: 0;
 }
 
 body {
     margin: 0;
-    font-size: 18px;
-    /* line-height: 1.5; */
-}
-
-.wrapper {
-    width: 100%;
-    position: relative;
-    overflow: hidden; 
-    min-height: 100vh;
+    font-size: 16px;
 }
 
 img {
@@ -28,6 +22,86 @@ img {
   }
 
 /* всё выше по умолчанию */
+
+  .container .main {
+      display: flex;
+      min-height: 100vh;
+  }
+
+  .container {
+    /* max-width: 1180px; */
+    padding: 0 15px;
+    margin: 0 auto; 
+  }
+
+  .header {
+      display: flex;
+      background-color: #D2B942;
+      padding: 30px 15px 30px 15px;
+      justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+  }
+
+  .nav-item {
+    margin: 0 10px 0 0;
+    list-style: none;
+    align-content: flex-end;
+  }
+
+  .nav-item a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .main {
+      background-color: #fff;
+      /* align-items: stretch; */
+  }
+
+  .mainArticle {
+      flex-basis: auto;
+      text-align: justify;
+      padding: 30px;
+  }
+
+  .mainArticle p{
+      text-indent: 20px;
+      margin: 0 0 10px 0;
+  }
+
+  .aside {
+    display: flex;
+    flex-basis: 210px;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .aside1 {
+      background-color: #C798B9;
+      order: -1;
+  }
+
+  .aside2 {
+      background-color: #9CB1C7;
+  }
+
+  .footer {
+      display: flex;
+      background-color: #84e485;
+      padding: 10px;
+      justify-content: center;
+  }
+
+
+
+  
+
 
 /* .row {
     display: flex;
