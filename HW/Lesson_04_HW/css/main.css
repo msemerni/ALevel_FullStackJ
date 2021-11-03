@@ -91,8 +91,13 @@ img {
 }
 
 /* .card:hover {
-    transform: translateY(-40px); не работает ?????
+    transform: translateY(-40px); 
+}
+.leftCard:hover {
+    transform: rotate(-24deg);
 } */
+/* не работает т.к. transform у левой (.leftCard) карты 
+перезаписывает  transform глобальной (.card)*/
 
 .leftCard:hover {
     transform: translateY(-30px) rotate(-24deg);

@@ -40,16 +40,3 @@ img {
 } */
 
   /* всё выше по умолчанию для flex*/
-
-  /* .aside { */
-    /* display: flex; */
-
-    /* flex-basis: 210px; не работает*/
-    /* max-width: 210px; */
-    /* width: 100%; */
-    /* так работает (см.выше) */
-
-    /* justify-content: center; если флекс*/
-    /* padding: 10px;
-    text-align: center;
-  } */

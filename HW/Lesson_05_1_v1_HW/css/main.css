@@ -24,22 +24,26 @@ img {
   /* всё выше по умолчанию */
   
   .container {
+    display: flex;
     /* max-width: 1180px; */
     padding: 0 15px;
     margin: 0 auto; 
+    min-height: 100vh;
+    flex-direction: column;
   }
 
   .header {
       display: flex;
       background-color: #D2B942;
       padding: 5px;
+      /* align-items: center; */
       justify-content: space-between;
   }
 
   .main {
-    background-color: #fff;
     display: flex;
-    min-height: 100vh;
+    background-color: #fff;
+    flex-grow: 1;
   }
 
   .nav {
@@ -52,7 +56,7 @@ img {
   .nav-item {
     margin: 0 10px 0 0;
     list-style: none;
-    align-content: flex-end;
+    /* align-content: flex-end; */
   }
 
   .nav-item a {
@@ -64,7 +68,7 @@ img {
       display: flex;
       text-align: center;
       padding: 30px;
-      flex-grow: 1;
+      /* flex-grow: 1; */
   }
 
   .mainArticle p {
@@ -73,8 +77,11 @@ img {
   }
 
   .aside {
-    flex-basis: 210px;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-basis: 210px; не работает*/
+    max-width: 210px;
+    width: 100%;
+    /* justify-content: center; */
     padding: 10px;
     text-align: center;
   }
@@ -88,13 +95,11 @@ img {
       background-color: #9CB1C7;
   }
 
-
   .footer {
       display: flex;
       background-color: #84e485;
       padding: 10px 10px 5px 10px;
       justify-content: center;
-      flex: 0 0 5em;
   }
 
 
