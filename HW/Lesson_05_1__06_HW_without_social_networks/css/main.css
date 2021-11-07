@@ -1,8 +1,4 @@
-﻿/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css); */
-/* лучше код CSS шрифтов скопировать сюда */
-  /* конец шрифтов */
-
-html {
+﻿html {
     box-sizing: border-box;
 }
 
@@ -115,7 +111,7 @@ img {
     display: flex; 
     justify-content: center;
     position: fixed;
-    bottom: 60px;
+    bottom: 25px;
     right: 25px;
     width: 26px;
     height: 26px;
@@ -150,45 +146,10 @@ img {
 
   .footer {
     display: flex;
-    align-items: center;
     background-color: #84e485;
-    padding: 5px;
+    padding: 10px 10px 5px 10px;
     justify-content: center;
   }
-
-  .footer #copyRights{
-    font-size: 12px;
-  }
-
-  /* соц иконки */
-  .socialNetworkList {
-    display: flex;
-    flex-grow: 1;
-    list-style: none;
-    justify-content: flex-end;
-  }
-
-  .socialNetworkList a {
-    text-decoration: none;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-    background: linear-gradient(45deg, #1441e6, #00ff72);
-    border-radius: 100%;
-  }
-  
-  .socialNetworkList a:hover {
-
-    transform: scale(2);
-    background: none;
-    color: blue;
-    transition: all .3s ease-in;
-  }
-  /* соц иконки конец*/
 
   .mainContent {
     display: flex;
@@ -263,12 +224,6 @@ img {
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
-  }
-
-  .mySlides {
-    background:dimgray;
-    color: #fff;
-
   }
 
   @media(max-width: 991px) {

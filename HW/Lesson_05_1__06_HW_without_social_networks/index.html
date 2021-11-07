@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson_05_1_HW</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="fonts/iconsSocial.css">
 </head>
 
 <body onload="currYear()">
     <div class="container">
+
         <div class="header">
             <a href="#"><img src="img/logo.png" alt="logo.png"></a>
             <div class="main-nav">
@@ -144,42 +144,15 @@
         </div>
 
         <footer class=footer id="footer">
-            <ul class="socialNetworkList">
-                <li class="socialNetworkItem">
-                    <a href="#" target=”_black”>
-                        <i class="icon icon-phone"></i>
-                    </a>
-                </li>
-                <li class="socialNetworkItem">
-                    <a href="#" target=”_black”>
-                        <i class="icon icon-github"></i>
-                    </a>
-                </li>
-                <li class="socialNetworkItem">
-                    <a href="#" target=”_black”>
-                        <i class="icon icon-paper-plane"></i>
-                    </a>
-                </li>
-                <li class="socialNetworkItem">
-                    <a href="#" target=”_black”>
-                        <i class="icon icon-facebook"></i>
-                    </a>
-                </li>
-                <li class="socialNetworkItem">
-                    <a href="#" target=”_black”>
-                        <i class="icon icon-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-            <span id=copyRights>&copy; Mykhailo Semernin 2021-</span>
+            <span>&copy; Mykhailo Semernin 2021-</span>
         </footer>
-
         <a class="goUp" href="#">&#8593;</a>
 
     </div>
     <script>
         function currYear() {
-            document.getElementById('copyRights').innerHTML += new Date().getFullYear();
+            document.getElementById('footer').innerHTML += new Date().getFullYear();
+            alert("1. Запретить скролл при открытии меню;\n2. Прибить кнопку GO к низу");
         }
     </script>
 </body>
