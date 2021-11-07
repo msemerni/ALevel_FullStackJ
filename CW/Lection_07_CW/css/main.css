@@ -1,0 +1,55 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    /* line-height: 1.5; */
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+/* всё выше по умолчанию */
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 25%;
+    padding: 0 15px 30px;
+} */
+
+  /* всё выше по умолчанию для flex*/
+
+  /* .aside { */
+    /* display: flex; */
+
+    /* flex-basis: 210px; не работает*/
+    /* max-width: 210px; */
+    /* width: 100%; */
+    /* так работает (см.выше) */
+
+    /* justify-content: center; если флекс*/
+    /* padding: 10px;
+    text-align: center;
+  } */

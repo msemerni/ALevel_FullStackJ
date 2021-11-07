@@ -193,6 +193,10 @@ img {
     transition: left .3s ease-in;
 }
 
+.nav:not(:hover) {
+    transition: left .3s ease-in;
+}
+
 .nav:hover:after {
     opacity: 0;
     visibility: hidden;
