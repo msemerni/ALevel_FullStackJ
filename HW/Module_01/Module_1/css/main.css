@@ -1,0 +1,123 @@
+﻿@font-face {
+    font-family: Revalia;
+    src: url(../fonts/Revalia/Revalia-Regular.ttf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Revalia, Verdana, Arial, sans-serif;
+    /* font-size: 100%; */
+ }
+
+/* body {
+    margin: 0;
+    font-size: 18px; */
+    /* line-height: 1.5; */
+/* } */
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+
+/* всё выше по умолчанию */
+
+.container {
+    max-width: 1950px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background: wheat;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    max-width: 96px;
+    max-height: 60px;
+    font-size: 48px;
+    line-height: 1.24;
+    font-weight: 400;
+    color: #34547A;
+    text-decoration: none;
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+.main-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.nav-box {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    margin: 0 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 25%;
+    padding: 0 15px 30px;
+} */
+
+  /* всё выше по умолчанию для flex*/
+
+  /* .aside { */
+    /* display: flex; */
+
+    /* flex-basis: 210px; не работает*/
+    /* max-width: 210px; */
+    /* width: 100%; */
+    /* так работает (см.выше) */
+
+    /* justify-content: center; если флекс*/
+    /* padding: 10px;
+    text-align: center;
+  } */
