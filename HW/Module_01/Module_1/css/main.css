@@ -98,6 +98,7 @@ img {
 .nav-item {
     text-transform: uppercase;
     padding: 0 21px;
+    white-space: nowrap;
 }
 
 .nav-item:nth-child(1) {
