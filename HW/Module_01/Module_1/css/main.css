@@ -53,12 +53,18 @@ img {
 
 /* всё выше по умолчанию */
 
+.content-border {
+    max-width: 11920px;
+    border: 1px solid yellow;
+}
+
 .container {
     max-width: 1950px;
     /* max-height: 1004px; */
     padding: 0 15px;
     margin: 0 auto;
     background: #EEEFF1;
+    border: 1px solid brown; 
 }
 
 /* _____________________header__________________ */
@@ -67,6 +73,7 @@ img {
     display: flex;
     align-items: center;
     padding: 50px 0;
+    margin: 0 -15px;
 }
 
 .logo {
@@ -77,7 +84,7 @@ img {
     font-family: Revalia, Arial, Verdana, sans-serif;
     font-size: 48px;
     line-height: 1.24;
-    padding: 0 10px;
+    padding: 0 15px;
     font-weight: 400; /* можно не указывать, т.к. по дефолту*/ 
     text-decoration: none;
     color: #34547A;
@@ -87,13 +94,13 @@ img {
     display: flex;
     flex-grow: 1;
     justify-content: flex-start;
-    padding: 10px;
-    margin: 0 -21px;
+    padding: 15px;
 }
 
 .nav-box {
     display: flex;
     list-style: none;
+    margin: 0 -21px;
 }
 
 .nav-item {
@@ -114,24 +121,38 @@ img {
 }
 
 /* _____________________design__________________ */
+.design {
+    margin: 0 -15px;
+}
 
 .design-row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
-    align-items: center;
+    justify-content: center;
 }
 
 .design-col {
     width: 50%;
-    padding: 0 15px 30px;
+    /* margin: 0 -15px; */
 }
 
+.design-col-one {
+    display: flex;
+    /* исправить на flex-end */
+    justify-content: flex-start;
+    /* удалить ? исправить?*/
+    padding: 15px 100px 188px 15px;
+}
+
+.design-col-two {
+    padding: 15px;
+}
 .design-col h1 {
     font-size: 48px;
     line-height: 1.64;
     font-weight: 500;
-    padding: 15px;
+    /* удалить */
+    text-align: justify;
 }
 
 .design-col p {
@@ -139,7 +160,8 @@ img {
     line-height: 1.64;
     font-weight: 400;
     color: #727272;
-    padding: 15px;
+        /* удалить */
+        text-align: justify;
 }
 
 .writeme {
@@ -150,10 +172,7 @@ img {
     padding: 15px;
 }
 
-.design-img {
 
-}
-.design-col 1 {}
 
 
 
