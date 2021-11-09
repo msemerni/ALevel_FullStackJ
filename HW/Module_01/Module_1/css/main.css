@@ -55,17 +55,18 @@ img {
 
 .container {
     max-width: 1950px;
-    max-height: 1004px;
+    /* max-height: 1004px; */
     padding: 0 15px;
     margin: 0 auto;
     background: #EEEFF1;
 }
 
+/* _____________________header__________________ */
+
 .header {
     display: flex;
     align-items: center;
-    color: #34547A;
-    padding: 50px 0 0 0;
+    padding: 50px 0;
 }
 
 .logo {
@@ -77,9 +78,9 @@ img {
     font-size: 48px;
     line-height: 1.24;
     padding: 0 10px;
-    /* font-weight: 400; можно не указывать, т.к. по дефолту*/ 
-    color: #34547A;
+    font-weight: 400; /* можно не указывать, т.к. по дефолту*/ 
     text-decoration: none;
+    color: #34547A;
 }
 
 .main-nav {
@@ -99,17 +100,60 @@ img {
     text-transform: uppercase;
     padding: 0 21px;
     white-space: nowrap;
+    text-decoration: none;
+
 }
 
 .nav-item:nth-child(1) {
     font-weight: 500;
 }
 
+.nav-item a {
+    text-decoration: none;
+    color: #34547A;
+}
 
+/* _____________________design__________________ */
 
+.design-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    align-items: center;
+}
 
+.design-col {
+    width: 50%;
+    padding: 0 15px 30px;
+}
 
+.design-col h1 {
+    font-size: 48px;
+    line-height: 1.64;
+    font-weight: 500;
+    padding: 15px;
+}
 
+.design-col p {
+    font-size: 16px;
+    line-height: 1.64;
+    font-weight: 400;
+    color: #727272;
+    padding: 15px;
+}
+
+.writeme {
+    padding: 25px 41px;
+    color: #fff;
+    background: #34547A;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.design-img {
+
+}
+.design-col 1 {}
 
 
 
