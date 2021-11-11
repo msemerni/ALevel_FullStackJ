@@ -38,6 +38,11 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     /* font-size: 100%; */
  }
 
+ body {
+     /* УДАЛИТЬ */
+    background-color: blanchedalmond;
+ }
+
 .wrapper {
     width: 100%;
     position: relative;
@@ -53,9 +58,29 @@ img {
 
 /* всё выше по умолчанию */
 
+     /* УДАЛИТЬ */
+
 .content-border {
     max-width: 1150px;
     border: 1px solid chartreuse;
+}
+     /* УДАЛИТЬ */
+
+.content-border-header {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    padding: 50px 0;
+    margin: 0 -15px;
+    position: fixed;
+    z-index: 9;
+    left: 15px;
+    right: 15px;
+    border: 1px solid chartreuse;
+}
+
+.header-main, .design {
+    background-color: #EEEFF1;
 }
 
 .container {
@@ -63,17 +88,21 @@ img {
     /* max-height: 1004px; */
     padding: 0 15px;
     margin: 0 auto;
-    background: #EEEFF1;
-    border: 1px solid brown; 
+    /* border: 1px solid brown;  */
 }
 
 /* _____________________header__________________ */
 
-.header {
+     /* УДАЛИТЬ */
+.header-main {
     display: flex;
     align-items: center;
     padding: 50px 0;
     margin: 0 -15px;
+    position: fixed;
+    z-index: 5;
+    left: 15px;
+    right: 15px;
 }
 
 .logo {
@@ -111,7 +140,7 @@ img {
 
 }
 
-.nav-item:nth-child(1) {
+.nav-box .nav-item:nth-child(1) > a {
     font-weight: 500;
 }
 
@@ -122,6 +151,7 @@ img {
 
 /* _____________________design__________________ */
 .design {
+    padding: 250px 0 0 0;
     margin: 0 -15px;
 }
 
