@@ -97,7 +97,6 @@ img {
 /* _____________________header__________________ */
 
      /* УДАЛИТЬ */
-
 .emptyheader {
     height: 250px;
 }
@@ -121,7 +120,9 @@ img {
     /* background-color: sienna; */
     border: red dotted 5px;
     position: fixed; 
-    top: 867px; 
+    top: 250px; 
+    /* top: 700px; 
+    top: 1066px;  */
     left: 0; 
     right: 0; 
     padding: 1450px 0 0 0
