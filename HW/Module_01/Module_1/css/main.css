@@ -47,6 +47,10 @@ h2 {
     font-size: 32px;
 }
 
+h3 {
+    font-size: 21px;
+}
+
 
  /* body { */
      /* УДАЛИТЬ */
@@ -96,7 +100,6 @@ img {
     background-color: #EEEFF1;
      /* УДАЛИТЬ */
      opacity: .9;
-
 }
 
 .container {
@@ -177,8 +180,8 @@ img {
 
 .design-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
     padding: 0 0 120px 0;
 }
 
@@ -236,27 +239,56 @@ img {
 }
 
 /* _____________________aboutme__________________ */
+.aboutme-container {
+    display: flex;
+    justify-content: center;
+
+}
 
 .aboutme-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 540px;
     line-height: 1.24;
-    padding: 100px;
+    padding: 119px 0 100px 0;
 
     /* padding: ; */
 }
 
 .aboutme-box h2 {
     line-height: 1.17;
+    padding: 0 0 25px 0;
+    font-weight: 500;
 }
 
 .aboutme-box p {
     color: #727272;
     line-height: 1.64;
+    padding: 25px 0 0 0;
+    text-align: center;
 }
 
+/* _____________________statistics__________________ */
 
+.statistics {
+    background: #34547A;
+}
 
+.statistics-row {
+    display: flex;
+    padding: 100px 0;
+    align-items: center;
+}
 
+.statistics-col-one {
+    display: flex;
+}
+
+.statistics-col-one-item {
+    display: flex;
+    padding: 0 25px 0 25px;
+}
 
 /* УДАЛИТЬ */
 .delete1 {
