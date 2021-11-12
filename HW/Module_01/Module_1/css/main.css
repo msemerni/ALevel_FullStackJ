@@ -35,8 +35,18 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     border: 0;
     font-family: Roboto, Arial, Verdana, sans-serif;
     font-weight: normal;
+    font-size: 16px;
     /* font-size: 100%; */
  }
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
 
  /* body { */
      /* УДАЛИТЬ */
@@ -84,6 +94,9 @@ img {
 
 .header-main, .design {
     background-color: #EEEFF1;
+     /* УДАЛИТЬ */
+     opacity: .9;
+
 }
 
 .container {
@@ -110,22 +123,6 @@ img {
     z-index: 5;
     left: 15px;
     right: 15px;
-}
-/* УДАЛИТЬ */
-.delete {
-    height: 800px; 
-    z-index: 6; 
-    /* background: blue;  */
-    opacity: .5;
-    /* background-color: sienna; */
-    border: red dotted 5px;
-    position: fixed; 
-    top: 250px; 
-    /* top: 700px; 
-    top: 1066px;  */
-    left: 0; 
-    right: 0; 
-    padding: 1450px 0 0 0
 }
 
 .logo {
@@ -182,7 +179,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 0 145px 0;
+    padding: 0 0 120px 0;
 }
 
 .design-col {
@@ -196,44 +193,110 @@ img {
     /* justify-content: flex-start; */
     justify-content: center;
     /* удалить ? исправить?*/
-    padding: 15px;
+    padding: 0 15px 15px 15px;
 }
 
 .design-col-two {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 15px 15px;
 }
+
 .design-col h1 {
-    font-size: 48px;
+    display: flex;
+    /* align-items: baseline; */
     line-height: 1.64;
     font-weight: 500;
-    /* удалить */
-    text-align: justify;
+    padding: 0px 0px 0px 0px;
+    /* text-align: justify; */
 }
 
 .design-col p {
-    font-size: 16px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
     line-height: 1.64;
     font-weight: 400;
     color: #727272;
-        /* удалить */
-        text-align: justify;
+    padding: 33px 0 60px 0;
+    /* justify-content: center; */
+}
+
+.design-box-button {
+    display: flex;
 }
 
 .writeme {
-    padding: 25px 41px;
-    color: #fff;
+    color: #FFFFFF;
     background: #34547A;
     text-decoration: none;
-    padding: 15px;
+    padding: 25px;
+    text-transform: uppercase;
+    letter-spacing: 10%;
 }
 
 /* _____________________aboutme__________________ */
 
 .aboutme-box {
     max-width: 540px;
+    line-height: 1.24;
+    padding: 100px;
+
     /* padding: ; */
 }
 
+.aboutme-box h2 {
+    line-height: 1.17;
+}
+
+.aboutme-box p {
+    color: #727272;
+    line-height: 1.64;
+}
+
+
+
+
+
+/* УДАЛИТЬ */
+.delete1 {
+    height: 5000px; 
+    opacity: 1;
+    z-index: -5;
+    border: red solid 1px;
+    position: fixed; 
+    top: 250px; 
+    /* top: 700px; 
+    top: 1066px;  */
+    left: 0; 
+    right: 0; 
+}
+/* УДАЛИТЬ */
+.delete2 {
+    height: 5000px; 
+    opacity: 1;
+    z-index: -5;
+    border: blue solid 1px;
+    position: fixed; 
+    /* top: 250px;  */
+    top: 700px; 
+    /* top: 1066px;  */
+    left: 0; 
+    right: 0; 
+}
+/* УДАЛИТЬ */
+.delete3 {
+    height: 5000px; 
+    opacity: 1;
+    z-index: -5;
+    border: green solid 1px;
+    position: fixed; 
+    /* top: 250px; 
+    top: 700px;  */
+    top: 1066px; 
+    left: 0; 
+    right: 0; 
+}
 
 
 
