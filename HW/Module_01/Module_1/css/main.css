@@ -38,10 +38,10 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     /* font-size: 100%; */
  }
 
- body {
+ /* body { */
      /* УДАЛИТЬ */
-    background-color: blanchedalmond;
- }
+    /* background-color: blanchedalmond;
+ } */
 
 .wrapper {
     width: 100%;
@@ -58,14 +58,8 @@ img {
 
 /* всё выше по умолчанию */
 
-     /* УДАЛИТЬ */
 
-.content-border {
-    max-width: 1150px;
-    border: 1px solid chartreuse;
-}
      /* УДАЛИТЬ */
-
 .content-border-header {
     display: flex;
     align-items: center;
@@ -77,6 +71,15 @@ img {
     left: 15px;
     right: 15px;
     border: 1px solid chartreuse;
+}
+
+     /* УДАЛИТЬ */
+.content-border-design {
+    position: absolute;
+    max-width: 1150px;
+    border: 1px solid chartreuse;
+    height: 450px;
+    top: 250px;
 }
 
 .header-main, .design {
@@ -94,6 +97,11 @@ img {
 /* _____________________header__________________ */
 
      /* УДАЛИТЬ */
+
+.emptyheader {
+    height: 250px;
+}
+     /* УДАЛИТЬ */
 .header-main {
     display: flex;
     align-items: center;
@@ -104,10 +112,24 @@ img {
     left: 15px;
     right: 15px;
 }
+/* УДАЛИТЬ */
+.delete {
+    height: 800px; 
+    z-index: 6; 
+    /* background: blue;  */
+    opacity: .5;
+    /* background-color: sienna; */
+    border: red dotted 5px;
+    position: fixed; 
+    top: 867px; 
+    left: 0; 
+    right: 0; 
+    padding: 1450px 0 0 0
+}
 
 .logo {
     display: flex;
-    max-width: 896px;
+    /* max-width: 896px; */
     width: 100%;
     justify-content: flex-start;
     font-family: Revalia, Arial, Verdana, sans-serif;
@@ -159,6 +181,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 0 145px 0;
 }
 
 .design-col {
@@ -201,6 +224,13 @@ img {
     background: #34547A;
     text-decoration: none;
     padding: 15px;
+}
+
+/* _____________________aboutme__________________ */
+
+.aboutme-box {
+    max-width: 540px;
+    /* padding: ; */
 }
 
 
