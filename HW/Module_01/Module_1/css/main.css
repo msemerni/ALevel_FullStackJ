@@ -174,7 +174,7 @@ img {
 
 /* _____________________design__________________ */
 .design {
-    padding: 250px 0 0 0;
+    /* padding: 250px 0 0 0; */
     margin: 0 -15px;
 }
 
@@ -182,7 +182,9 @@ img {
     display: flex;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    padding: 0 0 120px 0;
+    padding: 250px 0 120px 0;
+    /* margin: 0 -15px; */
+    
 }
 
 .design-col {
@@ -242,6 +244,7 @@ img {
 .aboutme-container {
     display: flex;
     justify-content: center;
+    margin: 0 -15px;
 
 }
 
@@ -273,21 +276,42 @@ img {
 
 .statistics {
     background: #34547A;
+    margin: 0 -15px;
+
 }
 
 .statistics-row {
     display: flex;
+    flex-grow: 1;
     padding: 100px 0;
     align-items: center;
+    justify-content: center;
 }
 
 .statistics-col-one {
     display: flex;
+    flex-grow: 1;
 }
 
 .statistics-col-one-item {
     display: flex;
+    flex-grow: 1;
+    
+
     padding: 0 25px 0 25px;
+}
+
+.stat-col-item-img {
+    display: flex;
+    width: 50%;
+}
+
+.stat-col-item-txt {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: #FFFFFF;
+    line-height: 1.64;
 }
 
 /* УДАЛИТЬ */
