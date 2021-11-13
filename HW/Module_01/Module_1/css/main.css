@@ -295,8 +295,6 @@ img {
 .statistics-col-one-item {
     display: flex;
     /* flex-grow: 1; */
-    
-
     padding: 0 25px 0 25px;
 }
 
@@ -310,7 +308,7 @@ img {
     flex-direction: column;
     width: 50%;
     color: #FFFFFF;
-    line-height: 1.64;
+    /* line-height: 1.64; */
 }
 
 /* УДАЛИТЬ */
