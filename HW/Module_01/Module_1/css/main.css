@@ -210,7 +210,7 @@ img {
 .design-col h1 {
     display: flex;
     /* align-items: baseline; */
-    line-height: 1.64;
+    line-height: 1.4;
     font-weight: 500;
     padding: 0px 0px 0px 0px;
     /* text-align: justify; */
@@ -220,7 +220,7 @@ img {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    line-height: 1.64;
+    line-height: 1.4;
     font-weight: 400;
     color: #727272;
     padding: 33px 0 60px 0;
@@ -267,7 +267,7 @@ img {
 
 .aboutme-box p {
     color: #727272;
-    line-height: 1.64;
+    line-height: 1.4;
     padding: 25px 0 0 0;
     text-align: center;
 }
@@ -314,6 +314,52 @@ img {
     padding: 0 0 0 20px;
     /* line-height: 1.64; */
 }
+
+/* _____________________myscill__________________ */
+
+.myscill-row {
+    display: flex;
+    flex-grow: 1;
+    max-width: 1150px;
+    padding: 100px 0 100px 0;
+}
+
+.myscill-col {
+    width: 50%;
+}
+
+.myscill-col > h2 {
+    font-size: 30px;
+    padding: 100px 0 35px 0;
+}
+
+.myscill-col > span {
+    font-size: 15px;
+    padding: 15px 0 10px 0;
+}
+
+.progressbar-container {
+    padding: 10px 0 15px 0;
+}
+
+.progressbar {
+    max-width: 445px;
+    background: #C4C4C4;
+}
+
+.progressbar:nth-child(1) div {
+    width: 70%;
+    height: 4px;
+    background: #34547A;
+}
+
+.progressbar:nth-child(2) div {
+    width: 50%;
+    height: 4px;
+    background: #34547A;
+}
+
+
 
 /* УДАЛИТЬ */
 .delete1 {
