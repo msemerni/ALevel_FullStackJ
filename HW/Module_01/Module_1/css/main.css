@@ -96,7 +96,7 @@ img {
     top: 250px;
 }
 
-.header-main, .design {
+.header-main, .design, .howiwork {
     background-color: #EEEFF1;
      /* УДАЛИТЬ */
      opacity: .9;
@@ -316,26 +316,33 @@ img {
     /* line-height: 1.64; */
 }
 
-/* _____________________myscill__________________ */
+/* _____________________myskill__________________ */
 
-.myscill-row {
+.myskill-row {
     display: flex;
     flex-grow: 1;
     max-width: 1150px;
     padding: 100px 0 100px 0;
-    align-items: flex-end;
+    /* align-items: center; */
 }
 
-.myscill-col {
+.myskill-col {
+    display: flex;
+    flex-direction: column;
     width: 50%;
 }
 
-.myscill-col > h2 {
+.myskill-col-two {
+    justify-content: center;
+}
+
+.myskill-col > h2 {
     font-weight: 500;
     padding: 100px 0 35px 0;
 }
 
-.myscill-col > span {
+.myskill-col > span {
+    display: inline-block;
     font-size: 15px;
     padding: 15px 0 10px 0;
 }
@@ -366,19 +373,68 @@ img {
     width: 70%;
 }
 
+
 /* _____________________howiwork__________________ */
 
 .howiwork-row {
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
+    padding: 100px 0 100px 0;
     align-items: center;
     text-align: center;
 }
 
-.howiwork-row >h2 {
+.howiwork-row > h2 {
     font-weight: 500;
+    padding: 0 0 25px 0;
 }
+
+.howiwork-row-paragraph {
+    max-width: 540px;
+    padding: 25px 0 25px 0;
+    line-height: 1.4;
+}
+
+.howiwork-video-box {
+    position: relative;
+    padding: 32px 0 0 ;
+}
+
+.playbtn-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* _____________________picture-box__________________ */
+
+.picture-box-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture-box-col {
+    display: flex;
+    width: 25%;
+}
+
+.picture-box-col:hover {
+    background: #000;
+    z-index: 1;
+    opacity: .8;
+}
+
+https://qna.habr.com/q/412491
+https://jsbin.com/pokunufiho/edit?html,css,output
+
+
+
+
+
+
+
 
 
 
