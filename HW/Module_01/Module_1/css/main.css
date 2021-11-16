@@ -302,6 +302,7 @@ img {
     display: flex;
     width: 50%;
     justify-content: flex-end;
+    min-width: 30px;
     
     /* max-width: 50px; */
 }
@@ -322,6 +323,7 @@ img {
     flex-grow: 1;
     max-width: 1150px;
     padding: 100px 0 100px 0;
+    align-items: flex-end;
 }
 
 .myscill-col {
@@ -329,7 +331,7 @@ img {
 }
 
 .myscill-col > h2 {
-    font-size: 30px;
+    font-weight: 500;
     padding: 100px 0 35px 0;
 }
 
@@ -343,21 +345,44 @@ img {
 }
 
 .progressbar {
-    max-width: 445px;
+    max-width: 80%;
     background: #C4C4C4;
 }
 
-.progressbar:nth-child(1) div {
-    width: 70%;
+.progressbar-default {
     height: 4px;
     background: #34547A;
 }
 
-.progressbar:nth-child(2) div {
-    width: 50%;
-    height: 4px;
-    background: #34547A;
+.progressbar-one > div {
+    width: 90%;
 }
+
+.progressbar-two > div {
+    width: 50%;
+}
+
+.progressbar-three > div {
+    width: 70%;
+}
+
+/* _____________________howiwork__________________ */
+
+.howiwork-row {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.howiwork-row >h2 {
+    font-weight: 500;
+}
+
+
+
+
 
 
 
