@@ -96,10 +96,10 @@ img {
     top: 250px;
 }
 
-.header-main, .design, .howiwork {
+.header-main, .design, .howiwork, .myform {
     background-color: #EEEFF1;
      /* УДАЛИТЬ */
-     opacity: .9;
+     /* opacity: .9; */
 }
 
 .container {
@@ -120,7 +120,7 @@ img {
 .header-main {
     display: flex;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 0 15px 0;
     margin: 0 -15px;
     position: fixed;
     z-index: 5;
@@ -379,7 +379,7 @@ img {
 .howiwork-row {
     display: flex;
     flex-direction: column;
-    padding: 100px 0 100px 0;
+    padding: 100px 0 50px 0;
     align-items: center;
     text-align: center;
 }
@@ -413,21 +413,101 @@ img {
 .picture-box-row {
     display: flex;
     flex-wrap: wrap;
+    padding: 50px 0 35px 0;
 }
 
 .picture-box-col {
-    display: flex;
+    position: relative;
     width: 25%;
 }
 
-.picture-box-col:hover {
-    background: #000;
-    z-index: 1;
-    opacity: .8;
+.picture-link::before {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8),
+     rgba(52, 84, 122, 0.8));
+    opacity: 0;
 }
 
+.picture-link::after {
+    content: ''; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    /* transform: translate(-50%, -50%); */
+    background: url(..//img/view.png) no-repeat center;
+    opacity: 0;
+}
+
+.picture-link:hover::before,
+.picture-link:hover::after {
+    opacity: 0.8;
+}
+
+/* _____________________partners__________________ */
+
+.partners {
+    /* background: #34547A; */
+    margin: 0 -15px;
+}
+
+.partners-row {
+    display: flex;
+    flex-grow: 1;
+    padding: 35px 0 100px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.partners-col {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 15px 0 15px;
+}
+
+/* _____________________myform__________________ */
+
+.myform-box {
+    display: flex;
+    /* flex-grow: 1; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 100px 15px 100px 15px;
+}
+
+.myform-box > h2 {
+    padding: 0 0 25px 0;
+}
+
+.myform-box > p {
+    padding: 25px 0 65px 0;
+    color: #727272;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* затемнение картинки при наведении:
 https://qna.habr.com/q/412491
-https://jsbin.com/pokunufiho/edit?html,css,output
+https://jsbin.com/pokunufiho/edit?html,css,output */
 
 
 
