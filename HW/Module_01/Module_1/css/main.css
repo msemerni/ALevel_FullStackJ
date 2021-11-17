@@ -126,6 +126,8 @@ img {
     z-index: 5;
     left: 15px;
     right: 15px;
+    max-width: 1150px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -237,7 +239,8 @@ img {
     text-decoration: none;
     padding: 25px;
     text-transform: uppercase;
-    letter-spacing: 10%;
+    /* letter-spacing: 10%; */
+    letter-spacing: 1.6px;
 }
 
 /* _____________________aboutme__________________ */
@@ -414,6 +417,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0 35px 0;
+    max-width: 1920px;
 }
 
 .picture-box-col {
@@ -473,7 +477,7 @@ img {
 
 /* _____________________myform__________________ */
 
-.myform-box {
+.myform-section {
     display: flex;
     /* flex-grow: 1; */
     flex-direction: column;
@@ -484,19 +488,53 @@ img {
     padding: 100px 15px 100px 15px;
 }
 
-.myform-box > h2 {
+.myform-section > h2 {
     padding: 0 0 25px 0;
-}
-
-.myform-box > p {
-    padding: 25px 0 65px 0;
-    color: #727272;
-    line-height: 1.4;
     font-weight: 500;
 }
 
+.myform-section > p {
+    padding: 25px 0 15px 0;
+    color: #727272;
+    line-height: 1.4;
+}
 
+.myform-box {
+    padding: 50px 0 50px 0;
+    /* margin: 0 15px; */
 
+}
+
+.myform-box-fieldset {
+    display: flex;
+}
+
+.fieldset-text {
+    padding: 18px 20px 18px 20px;
+}
+
+.fieldset-text-name {
+    margin: 0 15px 10px 0;
+}
+
+.fieldset-text-email {
+    margin: 0 0 10px 15px;
+}
+
+.fieldset-text-area {
+    width: 100%;
+    resize: none;
+}
+
+.myform-box-btn {
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    background: #34547A;
+    cursor: pointer;
+    padding: 20px 50px;
+}
 
 
 
