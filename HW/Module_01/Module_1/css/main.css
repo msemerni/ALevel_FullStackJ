@@ -29,7 +29,7 @@ html {
 box-sizing: inherit;
 }
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li, input, textarea {
     margin: 0;
     padding: 0;
     border: 0;
@@ -112,18 +112,22 @@ img {
 
 /* _____________________header__________________ */
 
-     /* УДАЛИТЬ */
 .emptyheader {
-    height: 250px;
+    position: fixed;
+    height: 124px;
+    left: 0;
+    right: 0;
+    background:green;
+    z-index: 4;
 }
-     /* УДАЛИТЬ */
+     
 .header-main {
+    position: fixed;
+    z-index: 5;
     display: flex;
     align-items: center;
     padding: 50px 0 15px 0;
     margin: 0 -15px;
-    position: fixed;
-    z-index: 5;
     left: 15px;
     right: 15px;
     max-width: 1150px;
@@ -162,7 +166,6 @@ img {
     padding: 0 21px;
     white-space: nowrap;
     text-decoration: none;
-
 }
 
 .nav-box .nav-item:nth-child(1) > a {
@@ -176,7 +179,7 @@ img {
 
 /* _____________________design__________________ */
 .design {
-    /* padding: 250px 0 0 0; */
+    padding: 250px 0 0 0;
     margin: 0 -15px;
 }
 
@@ -184,7 +187,7 @@ img {
     display: flex;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    padding: 250px 0 120px 0;
+    padding: 0px 0 120px 0;
     /* margin: 0 -15px; */
     
 }
@@ -239,6 +242,7 @@ img {
     text-decoration: none;
     padding: 25px;
     text-transform: uppercase;
+    white-space: nowrap;
     /* letter-spacing: 10%; */
     letter-spacing: 1.6px;
 }
@@ -490,23 +494,54 @@ img {
 
 .myform-section > h2 {
     padding: 0 0 25px 0;
+    margin: 0 -15px;
     font-weight: 500;
 }
 
 .myform-section > p {
-    padding: 25px 0 15px 0;
+    padding: 25px 0;
+    margin: 0 -15px;
     color: #727272;
     line-height: 1.4;
 }
 
+.myform-box-container {
+    margin: 0 -15px;
+    
+}
+
 .myform-box {
-    padding: 50px 0 50px 0;
-    /* margin: 0 15px; */
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 40px 0 50px 0;
+    margin: 0 15px;
 
 }
 
+.myform-box-fieldset-one {
+    display: flex;
+    padding: 0 0 10px 0;
+    /* flex-grow: 1; */
+    
+}
+.myform-box-fieldset-two {
+    /* flex-grow: 1; */
+    max-height: 175px;
+    height: 100%;
+    padding: 10px 0 50px 0;
+
+}
+.myform-box-fieldset-three {
+    /* flex-grow: 1; */
+    margin: 0 -15px;
+}
+
+
 .myform-box-fieldset {
     display: flex;
+    flex-direction: column;
 }
 
 .fieldset-text {
@@ -514,15 +549,18 @@ img {
 }
 
 .fieldset-text-name {
-    margin: 0 15px 10px 0;
+    margin: 0 15px 0 0;
+    width: 50%;
 }
 
 .fieldset-text-email {
-    margin: 0 0 10px 15px;
+    margin: 0 0 0 15px;
+    width: 50%;
 }
 
 .fieldset-text-area {
     width: 100%;
+    /* flex-grow: 1; */
     resize: none;
 }
 

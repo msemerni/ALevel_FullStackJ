@@ -17,18 +17,20 @@
         <!-- УДАЛИТЬ -->
 
         <header class="header">
-            <div class="container">
-                <div class="header-main">
-                    <a href="#" class="logo">WD</a>
-                    <nav class="main-nav">
-                        <ul class="nav-box">
-                            <li class="nav-item"><a href="#">Главная</a></li>
-                            <li class="nav-item"><a href="#">Об Авторе</a></li>
-                            <li class="nav-item"><a href="#">Работы</a></li>
-                            <li class="nav-item"><a href="#">Процесс</a></li>
-                            <li class="nav-item"><a href="#">Контакты</a></li>
-                        </ul>
-                    </nav>
+            <div class="emptyheader">
+                <div class="container">
+                    <div class="header-main">
+                        <a href="#" class="logo">WD</a>
+                        <nav class="main-nav">
+                            <ul class="nav-box">
+                                <li class="nav-item"><a href="#">Главная</a></li>
+                                <li class="nav-item"><a href="#">Об Авторе</a></li>
+                                <li class="nav-item"><a href="#">Работы</a></li>
+                                <li class="nav-item"><a href="#">Процесс</a></li>
+                                <li class="nav-item"><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
@@ -266,19 +268,22 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime harum, veniam deleniti
                     molestiae, sed dignissimos error in labore vel ipsa officiis recusandae quisquam soluta
                     minima sint! </p>
-
-                <form class="myform-box" action="" method="get">
-                    <div class="myform-box-fieldset">
-                        <input class="fieldset-text fieldset-text-name" type="text" placeholder="Ваше имя" class="fieldset-name"></input>
-                        <input class="fieldset-text fieldset-text-email" type="email" placeholder="Ваше e-mail" class="fieldset-name"></input>
-                        <textarea class="fieldset-text fieldset-text-area" placeholder="Сообщение"></textarea>
-
-
-
-                    </div>
-                    <button class="myform-box-btn" type="submit">Отправить</button>
-                    
-                </form>
+                <div class="myform-box-container">
+                    <form class="myform-box" action="" method="get">
+                        <div class="myform-box-fieldset-one">
+                            <input class="fieldset-text fieldset-text-name" type="text" placeholder="Ваше имя"
+                                class="fieldset-name"></input>
+                            <input class="fieldset-text fieldset-text-email" type="email" placeholder="Ваше e-mail"
+                                class="fieldset-name"></input>
+                        </div>
+                        <div class="myform-box-fieldset-two">
+                            <textarea class="fieldset-text fieldset-text-area" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="myform-box-fieldset-three">
+                            <button class="myform-box-btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
