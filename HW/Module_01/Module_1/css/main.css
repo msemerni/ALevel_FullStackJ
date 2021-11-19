@@ -241,7 +241,7 @@ img {
 }
 
 .aboutme-box h2 {
-    line-height: 1.17;
+    line-height: 1.16;
     padding: 0 0 25px 0;
     font-weight: 500;
 }
@@ -406,6 +406,7 @@ img {
     flex-wrap: wrap;
     padding: 50px 0 35px 0;
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .picture-box-col {
@@ -452,7 +453,7 @@ img {
 .partners-row {
     display: flex;
     flex-grow: 1;
-    padding: 35px 0 100px 0;
+    padding: 35px 15px 100px 15px;
     align-items: center;
     justify-content: center;
 }
@@ -492,20 +493,19 @@ img {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    padding: 35px 0px 0px 0px;
+    padding: 32px 0px 0px 0px;
 }
 
 .myform-box-fieldset-one {
     display: flex;
     padding: 0 0 10px 0;
     /* flex-grow: 1; */
-    
 }
 .myform-box-fieldset-two {
     /* flex-grow: 1; */
     /* max-height: 175px;
     height: 100%; */
-    padding: 10px 0 25px 0;
+    padding: 10px 0 20px 0;
 }
 
 .myform-box-fieldset-three {
@@ -519,7 +519,7 @@ img {
 }
 
 .fieldset-text {
-    padding: 18px 20px 18px 20px;
+    padding: 15px 15px 15px 25px;
     font-size: 14px;
     line-height: 1.63;
 }
@@ -536,7 +536,7 @@ img {
 
 .fieldset-text-area {
     width: 100%;
-    height: 200px;
+    height: 170px;
 
     /* flex-grow: 1; */
     resize: none;
@@ -549,7 +549,7 @@ img {
     letter-spacing: 2.1px;
     background: #34547A;
     cursor: pointer;
-    padding: 20px 50px;
+    padding: 18px 43px;
 }
 
 /* _____________________footer__________________ */
@@ -562,7 +562,7 @@ img {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    padding: 0 15px;
+    padding: 45px 15px;
 }
 
 .footer-col {
@@ -570,21 +570,21 @@ img {
     color: #FFFFFF;
 }
 
-.footer-col > h2 {
+.footer-col > h3 {
     font-weight: 500;
     line-height: 1.63;
-    padding: 50px 0 10px 0;
 }
 
 .footer-col > p {
     font-size: 13px;
     line-height: 1.63;
-    padding: 10px 0 50px 0;
+    padding: 10px 0 0 0;
 }
 
 .footer-col > a {
     text-decoration: none;
     padding: 0 11px;
+    font-size: 24px;
 }
 
 .footer-col-two {
@@ -607,21 +607,35 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* затемнение картинки при наведении:
 https://qna.habr.com/q/412491
 https://jsbin.com/pokunufiho/edit?html,css,output */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* УДАЛИТЬ */
