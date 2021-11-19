@@ -117,7 +117,7 @@ img {
     height: 124px;
     left: 0;
     right: 0;
-    background:green;
+    background: #EEEFF1;
     z-index: 4;
 }
      
@@ -481,43 +481,33 @@ img {
 
 /* _____________________myform__________________ */
 
-.myform-section {
-    display: flex;
+.myform-section-container {
+    /* display: flex; */
     /* flex-grow: 1; */
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     text-align: center;
-    max-width: 540px;
+    max-width: 570px;
     margin: 0 auto;
     padding: 100px 15px 100px 15px;
 }
 
-.myform-section > h2 {
+.myform-section-container > h2 {
     padding: 0 0 25px 0;
-    margin: 0 -15px;
-    font-weight: 500;
+     font-weight: 500;
 }
 
-.myform-section > p {
+.myform-section-container > p {
     padding: 25px 0;
-    margin: 0 -15px;
     color: #727272;
     line-height: 1.4;
 }
 
-.myform-box-container {
-    margin: 0 -15px;
-    
-}
-
 .myform-box {
     display: flex;
-    width: 100%;
     flex-grow: 1;
     flex-direction: column;
-    padding: 40px 0 50px 0;
-    margin: 0 15px;
-
+    padding: 40px 0px 0px 0px;
 }
 
 .myform-box-fieldset-one {
@@ -528,16 +518,15 @@ img {
 }
 .myform-box-fieldset-two {
     /* flex-grow: 1; */
-    max-height: 175px;
-    height: 100%;
-    padding: 10px 0 50px 0;
-
+    /* max-height: 175px;
+    height: 100%; */
+    padding: 10px 0 25px 0;
 }
+
 .myform-box-fieldset-three {
     /* flex-grow: 1; */
-    margin: 0 -15px;
+    padding: 25px 0 0 0;
 }
-
 
 .myform-box-fieldset {
     display: flex;
@@ -560,6 +549,8 @@ img {
 
 .fieldset-text-area {
     width: 100%;
+    height: 200px;
+
     /* flex-grow: 1; */
     resize: none;
 }
@@ -573,6 +564,35 @@ img {
     cursor: pointer;
     padding: 20px 50px;
 }
+
+/* _____________________footer__________________ */
+
+.footer-background {
+    background: #34547A;
+}
+
+.footer-row {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.footer-col {
+    width: 50%;
+    color: #FFFFFF;
+}
+
+.footer-col > h3 {
+    font-weight: 500;
+    padding: 50px 0 10px 0;
+}
+
+.footer-col > p {
+    font-size: 13px;
+    line-height: 1.64;
+    padding: 10px 0 50px 0;
+}
+
 
 
 
