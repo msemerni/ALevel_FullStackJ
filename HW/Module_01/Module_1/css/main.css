@@ -287,6 +287,10 @@ img {
     /* max-width: 50px; */
 }
 
+.stat-col-item-img > img {
+    max-width: 50px;
+}
+
 .stat-col-item-txt {
     display: flex;
     flex-direction: column;
