@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module_01</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="fonts/iconsSocial/iconsSocial.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -16,8 +16,14 @@
             <div class="emptyheader">
                 <div class="container">
                     <div class="header-main">
-                        <a href="#" class="logo">WD</a>
+                        <div class="logo-container">
+                            <a href="#" class="logo">WD</a>
+                        </div>
                         <nav class="main-nav">
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
                             <ul class="nav-box">
                                 <li class="nav-item"><a href="#">Главная</a></li>
                                 <li class="nav-item"><a href="#">Об Авторе</a></li>
@@ -36,13 +42,16 @@
                 <div class="container">
                     <div class="design-row">
                         <div class="design-col design-col-one">
-                            <object class=design-img type="image/svg+xml" data="img/Frame.svg"></object>
+                            <!-- <object class=design-img type="image/svg+xml" data="img/Frame.svg"></object> -->
+                            <img class=design-img type="image/svg+xml" src="img/Frame.svg"></img>
                         </div>
                         <div class="design-col design-col-two">
-                            <h1>Дизайн и верстка</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores maxime natus
-                                quod atque nesciunt optio accusantium suscipit? Sapiente pariatur explicabo.</p>
-                            <div class="design-box-button">
+                            <h1>Дизайн и вёрстка</h1>
+                            <div class="design-col-two-paragraphs">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores maxime natus
+                                    quod atque nesciunt optio accusantium suscipit? Sapiente pariatur explicabo.</p>
+                            </div>
+                                <div class="design-box-button">
                                 <a class="writeme" href="#">Написать мне</a>
                             </div>
                         </div>
@@ -55,9 +64,11 @@
                     <div class="aboutme-container">
                         <div class="aboutme-box">
                             <h2>Обо мне</h2>
+                            <div class="aboutme-box-paragraphs">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime harum, veniam deleniti
                                 molestiae, sed dignissimos error in labore vel ipsa officiis recusandae quisquam soluta
                                 minima sint! </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,7 +137,6 @@
                                     <p>проектов</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -136,26 +146,28 @@
                 <div class="container">
                     <div class="myskill-row">
                         <div class="myskill-col">
-                            <h2>Мои навыки</h2>
-                            <span>HTML/CSS</span>
-                            <div class="progressbar-container">
-                                <div class="progressbar progressbar-one">
-                                    <div class="progressbar-default"></div>
+                            <div class="myskill-col-container">
+                                <h2>Мои навыки</h2>
+                                <span>HTML/CSS</span>
+                                <div class="progressbar-container">
+                                    <div class="progressbar progressbar-one">
+                                        <div class="progressbar-default"></div>
+                                    </div>
+                                </div>
+                                <span>Java Script</span>
+                                <div class="progressbar-container">
+                                    <div class="progressbar progressbar-two">
+                                        <div class="progressbar-default"></div>
+                                    </div>
+                                </div>
+                                <span>.Net</span>
+                                <div class="progressbar-container">
+                                    <div class="progressbar progressbar-three">
+                                        <div class="progressbar-default"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <span>Java Script</span>
-                            <div class="progressbar-container">
-                                <div class="progressbar progressbar-two">
-                                    <div class="progressbar-default"></div>
-                                </div>
                             </div>
-                            <span>.Net</span>
-                            <div class="progressbar-container">
-                                <div class="progressbar progressbar-three">
-                                    <div class="progressbar-default"></div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="myskill-col myskill-col-two">
                             <img class="" src="img/face.png" alt="face">
@@ -286,12 +298,26 @@
                     <div class="footer-row">
                         <div class="footer-col footer-col-one">
                             <h3>Семернин Михаил</h3>
-                            <p>(с) 2021. Все права защищены.</p>
+                            <span>(с) 2021. Все права защищены.</span>
                         </div>
                         <div class="footer-col footer-col-two">
-                            <a href="#" target=”_black”><i class="icon icon-VK"></i></a>
-                            <a href="#" target=”_black”><i class="icon icon-VK"></i></a>
-                            <a href="#" target=”_black”><i class="icon icon-VK"></i></a>
+                            <ul class="footer-ul">
+                                <li class="footer-li-item">
+                                    <a href="#" target=”_black”>
+                                        <i class="icon icon-VK"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-li-item">
+                                    <a href="#" target=”_black”>
+                                        <i class="icon icon-VK"></i>
+                                    </a>
+                                </li>
+                                <li class="footer-li-item">
+                                    <a href="#" target=”_black”>
+                                        <i class="icon icon-VK"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
