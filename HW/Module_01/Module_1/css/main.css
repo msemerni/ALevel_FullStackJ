@@ -55,12 +55,6 @@ p {
     margin-bottom: 15px;
 }
 
-
- /* body { */
-     /* УДАЛИТЬ */
-    /* background-color: blanchedalmond;
- } */
-
 .wrapper {
     width: 100%;
     position: relative;
@@ -92,7 +86,7 @@ img {
 
 .emptyheader {
     position: fixed;
-    height: 124px;
+    height: 134px;
     left: 0;
     right: 0;
     background: #EEEFF1;
@@ -115,7 +109,6 @@ img {
     display: flex;
     justify-content: flex-start;
     width: 100%;
-
 }
 
 .logo {
@@ -142,6 +135,7 @@ img {
 .dropdown {
         position: relative;
 }
+
   /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
       display: none;
@@ -201,6 +195,7 @@ img {
 }
 
 /* _____________________design__________________ */
+
 .design {
     padding: 245px 0 0 0;
     margin: 0 -15px;
@@ -240,7 +235,7 @@ img {
     /* align-items: baseline; */
     line-height: 1.4;
     font-weight: 500;
-    padding: 0 0 15px 0;
+    margin: 0 0 15px 0;
     /* text-align: justify; */
 }
 
@@ -252,7 +247,7 @@ img {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    line-height: 1.64;
+    line-height: 1.63;
     font-weight: 400;
     color: #727272;
     /* padding: 40px 0 50px 0; */
@@ -262,7 +257,6 @@ img {
 .design-box-button {
     display: flex;
 }
-
 
 .writeme {
     color: #FFFFFF;
@@ -280,32 +274,32 @@ img {
     background: #25f1d6;
     color: #000;
 }
+
 /* _____________________aboutme__________________ */
+
 .aboutme-container {
     display: flex;
     justify-content: center;
     margin: 0 -15px;
-
 }
 
 .aboutme-box {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
     max-width: 540px;
-    line-height: 1.24;
+    /* line-height: 1.24; */
     padding: 119px 0 65px 0;
-
-    /* padding: ; */
 }
 
 .aboutme-box-paragraphs {
-    padding: 15px 0 15px 0;
+    padding: 25px 0 15px 0;
 }
 
 .aboutme-box h2 {
     line-height: 1.16;
-    padding: 0 0 25px 0;
+    margin: 0 0 15px 0;
     font-weight: 500;
 }
 
@@ -398,12 +392,17 @@ img {
 
 .myskill-col-container {
     max-width: 80%;
+    padding: 105px 0 30px 0;
 }
 
-.myskill-col-container > h2 {
+.myskill-h2-container {
+    padding: 0 0 15px 0;
+}
+
+.myskill-h2-container > h2 {
     font-weight: 500;
-    padding: 105px 0 30px 0;
     line-height: 1.16;
+    margin: 0 0 15px 0;
 }
 
 .myskill-col-container > span {
@@ -441,7 +440,6 @@ img {
     width: 70%;
 }
 
-
 /* _____________________howiwork__________________ */
 
 .howiwork-row {
@@ -450,23 +448,29 @@ img {
     padding: 103px 0 75px 0;
     align-items: center;
     text-align: center;
+    /* line-height: 1.24; */
 }
 
-.howiwork-row > h2 {
-    font-weight: 500;
-    padding: 0 0 25px 0;
-    line-height: 1.16;
-}
-
-.howiwork-row-paragraph {
+.howiwork-text-container {
     max-width: 540px;
-    padding: 15px 0 15px 0;
+    padding: 25px 0 25px 0;
+}
+
+.howiwork-text-container h2 {
+    line-height: 1.16;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.howiwork-text-container p {
+    color: #727272;
     line-height: 1.63;
+    /* text-align: center; */
 }
 
 .howiwork-video-box {
     position: relative;
-    padding: 10px 15px 15px 15px ;
+    padding: 15px 15px 15px 15px ;
 }
 
 .playbtn-box {
@@ -492,6 +496,11 @@ img {
     width: 25%;
 }
 
+.picture-link {
+    display: block;
+    position: relative;
+}
+
 .picture-link::before {
     content: ''; 
     position: absolute; 
@@ -507,14 +516,25 @@ img {
 .picture-link::after {
     content: ''; 
     position: absolute; 
+    width: 100px;
+    height: 58px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(..//img/view.png);
+    opacity: 0;
+}
+    /* или так, но не очень хорошо: */
+/* .picture-link::after {
+    content: ''; 
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0; 
     bottom: 0;
-    /* transform: translate(-50%, -50%); */
     background: url(..//img/view.png) no-repeat center;
     opacity: 0;
-}
+} */
 
 .picture-link:hover::before,
 .picture-link:hover::after {
@@ -540,8 +560,13 @@ img {
 .partners-col {
     display: flex;
     flex-grow: 1;
+    width: 25%;
     padding: 0 5px 0 5px;
     justify-content: center;
+}
+
+.partners-col > a:hover {
+    transform: scale(1.1);
 }
 
 /* _____________________myform__________________ */
@@ -550,21 +575,24 @@ img {
     /* display: flex; */
     /* flex-grow: 1; */
     /* flex-direction: column; */
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
     max-width: 570px;
     margin: 0 auto;
     padding: 100px 15px 70px 15px;
 }
 
-.myform-section-container > h2 {
-    padding: 0 0 15px 0;
+.myform-section-h2-container {
+    padding: 25px 0;
+}
+
+.myform-section-h2-container > h2 {
+    margin: 0 0 15px 0;
     line-height: 1.16;
     font-weight: 500;
 }
 
 .myform-section-container > p {
-    padding: 25px 0;
     color: #727272;
     line-height: 1.63;
 }
@@ -617,7 +645,6 @@ img {
 .fieldset-text-area {
     width: 100%;
     height: 170px;
-
     /* flex-grow: 1; */
     resize: none;
 }
@@ -660,7 +687,7 @@ img {
 .footer-col > h3 {
     font-weight: 500;
     line-height: 1.63;
-    padding: 0 0 7px 0;
+    margin: 0 0 7px 0;
 }
 
 .footer-col > span {
@@ -676,12 +703,9 @@ img {
     font-size: 17px;
 }
 
-
-
 .footer-ul {
     display: flex;
     list-style: none;
-
 }
 
 .footer-ul a {
@@ -708,13 +732,13 @@ img {
     color: blue;
 } */
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 
     .header-main {
         padding: 30px 0;
     }
     .design {
-        margin: 0 auto;
+        padding: 124px 0 0 0;
     }
 
     .design-row {
@@ -750,6 +774,7 @@ img {
 
     .myskill-col-container {
         max-width: 100%;
+        padding: 15px 0;
     }
 
     .myskill-col-two {
@@ -758,6 +783,12 @@ img {
     .picture-box-row {
         padding-top: 0;
     }
+
+    /* не работает
+    .picture-link::after {
+        width: 50px;
+        height: 29px;
+    } */
 
     .partners-row {
         padding: 35px 0;
@@ -779,7 +810,7 @@ img {
         display: flex; /* используем flex для центрирования содержимого */
         align-items: center;  /* центрируем содержимое кнопки */
         position: fixed;
-        top: 45px;
+        top: 47px;
         right: 25px;
         width: 26px;
         height: 26px;
@@ -845,8 +876,6 @@ img {
         visibility: visible;
         right: 15px;
       }
-
-      
 }
 
 
